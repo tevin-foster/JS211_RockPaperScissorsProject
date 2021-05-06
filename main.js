@@ -13,10 +13,19 @@ const rl = readline.createInterface({
 
 // the function that will be called by the unit test below
 const rockPaperScissors = (hand1, hand2) => {
+  if hand1 === hand2 {
+  return "Its a tie!"
+  }
+if(hand1 === 'rock' && hand2 === 'paper')
+  return "Hand two wins!"
+}
+else if(hand1 === 'paper' && hand2 === 'scissors'){
+return "Hand two wins"
+}
+//use the string method trim() along with the strong method toLowerCase()
 
   // Write code here
   // Use the unit test to see what is expected
-
 }
 
 // the first function called in the program to get an input from the user
